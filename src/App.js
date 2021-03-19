@@ -7,7 +7,7 @@ function App() {
       <p>Hello World</p>
       <p>Nallasopara</p>
       <p>Agla Station</p>
-      <p>Agla Station</p>
+      <p>next Station</p>
     </div>
   );
 }

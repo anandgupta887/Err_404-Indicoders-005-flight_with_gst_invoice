@@ -1,13 +1,14 @@
 import "../styles/Header.css";
+import SearchModal from "./SearchModal";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    position: "absolute",
-    width: "50%",
-    height: "auto",
+    // position: "absolute",
+    // width: "50%",
+    // height: "auto",
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
@@ -58,7 +59,7 @@ function Header() {
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
               >
-                {body}
+                <SearchModal style={classes.paper} />
               </Modal>
               <a href="/" className="header_a_link">
                 Contact

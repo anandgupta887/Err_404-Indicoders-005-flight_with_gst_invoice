@@ -1,0 +1,14 @@
+.searchModal {
+  max-height: 70%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  overflow-y: scroll;
+}
+
+.searchModal__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}

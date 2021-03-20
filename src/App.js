@@ -1,13 +1,12 @@
 import "./App.css";
+import Home from "./assests/components/Home";
+import Header from "./assests/components/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1>All The Best</h1>
-      <p>Hello World</p>
-      <p>Nallasopara</p>
-      <p>Agla Station</p>
-      <p>next Station</p>
+    <Header />
+    <Home />
     </div>
   );
 }

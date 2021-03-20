@@ -1,0 +1,131 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4caac2;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) */
+    /* ,url('./images/img2.jpg'); */
+}
+
+.containers {
+    width: 80%;
+    padding-top: 10px;
+    
+}
+.cont-act {
+    width: 100%;
+    color: #355aa0;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.rows {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+
+}
+
+.rows .cols {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 30px 0px 10px;
+    transition: 0.5s;
+}
+
+.inputs  {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #355aa0;
+}
+
+.inputs input,
+.inputs.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.inputs .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputs input:focus + .label,
+.inputs input:valid + .label {
+    top: -35px;
+    left: -10px;
+}
+
+.rows .inputs .text {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #355aa0;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.inputs input:focus ~ .text,
+.inputs input:valid ~ .text
+{
+    height: 100%;
+}
+
+.inputs.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.inputs.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.inputs textarea:focus + .label,
+.inputs textarea:valid + .label {
+    top: -35px;
+    left: -10px;
+}
+
+.inputs textarea:focus ~ .text,
+.inputs textarea:valid ~ .text
+{
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #355aa0;
+    color: #4caac2;
+    font-size: 18px;
+    border-radius: 2px;
+}

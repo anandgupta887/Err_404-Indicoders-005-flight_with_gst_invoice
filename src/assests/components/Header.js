@@ -15,7 +15,7 @@ import "../styles/Header.css";
             <a href="/" className = "header_a_link">Home </a>
             <a href="/" className = "header_a_link">Book Flight</a>
             <a href="/" className = "header_a_link">Search Invoices</a>
-            <a href="/" className = "header_a_link">Contact</a>
+            <a href="Contact.js" className = "header_a_link">Contact</a>
            
            
           </li>

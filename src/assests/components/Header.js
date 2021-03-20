@@ -3,6 +3,7 @@ import SearchModal from "./SearchModal";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -31,11 +32,13 @@ function Header() {
     <div>
       <div className="header">
         <div className="left_side">
-          <img
-            className="header_logo"
-            src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png"
-            alt=""
-          />
+          <Link to="/">
+            <img
+              className="header_logo"
+              src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png"
+              alt=""
+            />
+          </Link>
         </div>
 
         <div className="right_side">

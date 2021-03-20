@@ -5,6 +5,7 @@ import Contact from "./assests/components/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Services from "./assests/components/Services";
 import Footer from "./assests/components/Footer";
+import ThankYou from "./assests/components/ThankYou";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Header />
             <Contact />
           </Route>
-          <Route path="/thankyou">
+     <Route path="/thankyou">
             <h1>This is thank you page</h1>
           </Route>
           <Route path="/">
@@ -29,6 +30,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+
     </div>
   );
 }

@@ -47,7 +47,7 @@ function Header() {
               <a href="/" className="header_a_link">
                 Home{" "}
               </a>
-              <a href="/" className="header_a_link">
+              <a href="#book" className="header_a_link">
                 Book Flight
               </a>
               <a onClick={handleOpen} className="header_a_link">

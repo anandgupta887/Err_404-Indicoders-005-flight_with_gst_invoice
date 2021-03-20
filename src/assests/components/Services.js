@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import "../styles/Services.css";
-import World from "../images/world.png"
+import World from "../images/world.png";
+import { useHistory } from "react-router-dom";
 
 function Services() {
 
+      let history = useHistory();
     const [name, setName] = useState("");
     const [depart, setDepart] = useState("");
     const [dest, setDest] = useState("");
@@ -26,11 +28,11 @@ function Services() {
       };
 
     const createData = () => {
-            //
+          history.push("/Checkout");
     }
 
   return (
-    <div className="services">
+    <div className="services" id = "book">
       <h1 className = "services_heading">Enter Your Details</h1>
 
       <div className="services_main">

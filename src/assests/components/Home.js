@@ -10,7 +10,9 @@ function Home() {
       </div>         
       <div className = "main_header">
         <h1 className = "main_heading">Book Your Ticket Now</h1>
+        <a href = "#book">
         <button className = "main_btn">Book Now</button>
+        </a>
       </div>
        
     </div>

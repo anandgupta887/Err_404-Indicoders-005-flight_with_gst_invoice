@@ -40,6 +40,7 @@
   padding: 10px;
   outline: none;
   border-color: lightblue;
+  caret-color: #3284b3;
 }
 
 .form__btn {

@@ -31,11 +31,13 @@ function Header() {
     <div>
       <div className="header">
         <div className="left_side">
+        <a href="1">
           <img
             className="header_logo"
             src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png"
             alt=""
           />
+          </a>
         </div>
 
         <div className="right_side">
@@ -44,7 +46,7 @@ function Header() {
               <a href="/" className="header_a_link">
                 Home{" "}
               </a>
-              <a href="/" className="header_a_link">
+              <a href="#book" className="header_a_link">
                 Book Flight
               </a>
               <a onClick={handleOpen} className="header_a_link">

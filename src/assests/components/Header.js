@@ -1,12 +1,43 @@
-
 import "../styles/Header.css";
+import { makeStyles } from "@material-ui/core/styles";
+import Modal from "@material-ui/core/Modal";
+import { useState } from "react";
 
- function Header() {
-     return (
-         <div>
-        <div className="header">
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    position: "absolute",
+    width: "50%",
+    height: "auto",
+    backgroundColor: theme.palette.background.paper,
+    border: "2px solid #000",
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+}));
+
+function Header() {
+  const classes = useStyles();
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const body = <div className={classes.paper}></div>;
+
+  return (
+    <div>
+      <div className="header">
         <div className="left_side">
-          <img className = "header_logo" src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png" alt=""/>
+          <img
+            className="header_logo"
+            src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png"
+            alt=""
+          />
         </div>
 
       <div className="right_side">
@@ -15,7 +46,7 @@ import "../styles/Header.css";
             <a href="/" className = "header_a_link">Home </a>
             <a href="/" className = "header_a_link">Book Flight</a>
             <a href="/" className = "header_a_link">Search Invoices</a>
-            <a href="Contact.js" className = "header_a_link">Contact</a>
+            <a href="/" className = "header_a_link">Contact</a>
            
            
           </li>
@@ -23,9 +54,8 @@ import "../styles/Header.css";
       </div>
      
       </div>
-         </div>
-     )
- }
- 
- export default Header
- 
+    </div>
+  );
+}
+
+export default Header;

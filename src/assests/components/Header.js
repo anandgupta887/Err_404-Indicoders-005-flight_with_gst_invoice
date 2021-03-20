@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Header() {
+function Header({ home }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
@@ -47,7 +47,7 @@ function Header() {
               <a href="/" className="header_a_link">
                 Home{" "}
               </a>
-              <a href="#book" className="header_a_link">
+              <a href={home ? `#book` : `/#book`} className="header_a_link">
                 Book Flight
               </a>
               <a onClick={handleOpen} className="header_a_link">
@@ -66,6 +66,7 @@ function Header() {
               </a>
             </li>
           </ul>
+          <hr />
         </div>
       </div>
     </div>

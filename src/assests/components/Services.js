@@ -42,7 +42,7 @@ function Services() {
   };
 
   return (
-    <div className="services">
+    <div id="book" className="services">
       <h1 className="services_heading">Enter Your Details</h1>
 
       <div className="services_main">

@@ -26,9 +26,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    <Header />
-    <Home />
-    <Contact />
+      
     </div>
   );
 }

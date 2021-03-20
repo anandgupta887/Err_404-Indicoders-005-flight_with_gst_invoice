@@ -1,15 +1,16 @@
 import React from "react";
 
 function ThankYou() {
-    return (
+  return (
     <div class="thank-you">
-        <div class="thanks">
+      <div class="thanks">
         <h1>Thank You</h1>
-        <a href="/" class="one-btn">close</a> 
-        </div>
+        <a href="/" class="one-btn">
+          close
+        </a>
+      </div>
     </div>
-    )
+  );
 }
 
-export default ThankYou
-
+export default ThankYou;

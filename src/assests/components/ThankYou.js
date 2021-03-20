@@ -9,8 +9,7 @@ function ThankYou() {
         <p>Invoice has been successfully submitted</p>
         <a href="/" class="btns">Back to Home</a>
     </div>
-    )
+  );
 }
 
-export default ThankYou
-
+export default ThankYou;

@@ -18,8 +18,11 @@ function App() {
             <Header />
             <Contact />
           </Route>
+          <Route path="/thankyou">
+            <h1>This is thank you page</h1>
+          </Route>
           <Route path="/">
-            <Header />
+            <Header home />
             <Home />
             <Services />
           </Route>

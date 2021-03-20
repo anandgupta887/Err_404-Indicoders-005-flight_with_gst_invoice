@@ -3,6 +3,7 @@ import SearchModal from "./SearchModal";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Header() {
+function Header({ home }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
@@ -31,11 +32,13 @@ function Header() {
     <div>
       <div className="header">
         <div className="left_side">
-          <img
-            className="header_logo"
-            src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png"
-            alt=""
-          />
+          <Link to="/">
+            <img
+              className="header_logo"
+              src="http://www.bitkraft.co.in/bk/wp-content/uploads/2014/06/TM-Bitkraft-Logo-PNG.png"
+              alt=""
+            />
+          </Link>
         </div>
 
         <div className="right_side">
@@ -44,7 +47,7 @@ function Header() {
               <a href="/" className="header_a_link">
                 Home{" "}
               </a>
-              <a href="/" className="header_a_link">
+              <a href={home ? `#book` : `/#book`} className="header_a_link">
                 Book Flight
               </a>
               <a onClick={handleOpen} className="header_a_link">
@@ -63,6 +66,7 @@ function Header() {
               </a>
             </li>
           </ul>
+          <hr />
         </div>
       </div>
     </div>
